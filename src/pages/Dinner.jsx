@@ -14,6 +14,7 @@ const Dinner = () => {
     <div>
       <h2>Dinner Meals</h2>
       <MealList meals={dinnerMeals} />
+      
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import MealList from '../components/MealList';
 import { getLunchMeals } from '../api';
+import MealCard from '../components/MealCard';
 
 const Lunch = () => {
   const [lunchMeals, setLunchMeals] = useState([]);
@@ -14,6 +15,7 @@ const Lunch = () => {
     <div>
       <h2>Lunch Meals</h2>
       <MealList meals={lunchMeals} />
+      <MealCard />
     </div>
   );
 };
